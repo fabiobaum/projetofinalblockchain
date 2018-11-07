@@ -58,7 +58,7 @@ const contratoUsoDeImagemABI = [
 	}
 ];
 
-var contratoUsoDeImagem = web3.eth.contract(contratoUsoDeImagemABI).at("0xcb5eb5a839b07d97faf2103c133e5f078123d5e7");
+var contratoUsoDeImagem = web3.eth.contract(contratoUsoDeImagemABI).at("0x17bf287cd5fe5636d780477152b6b5fb0f990c67");
 
 function obtemNomeEmpresa() {
     contratoUsoDeImagem.nomeEmpresa({from: contaUsuario, gas: 3000000, value: 0}, function (err, resultado) {
